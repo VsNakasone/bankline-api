@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
+import static com.dio.santander.banklineapi.model.MovimentacaoTipo.*;
+
 @Service
 public class MovimentacaoService {
 
@@ -40,4 +42,5 @@ public class MovimentacaoService {
         }
         repository.save(movimentacao);
     }
+
 }
