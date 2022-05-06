@@ -3,7 +3,7 @@ package com.dio.santander.banklineapi.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tabela de clientes")
+@Table(name = "tabela_clientes")
 public class Cliente {
 
     @Id
