@@ -21,11 +21,13 @@ public class ClienteController {
 
     @GetMapping
     public List<Cliente> findAll() {
+
         return repository.findAll();
     }
 
     @PostMapping
     public void save(@RequestBody NovoCliente cliente) {
+
         service.save(cliente);
     }
 }

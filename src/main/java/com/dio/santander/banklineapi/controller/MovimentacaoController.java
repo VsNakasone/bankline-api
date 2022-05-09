@@ -21,10 +21,12 @@ public class MovimentacaoController {
 
     @GetMapping
     public List<Movimentacao> findAll() {
+
         return repository.findAll();
     }
     @PostMapping
     public void save(@RequestBody NovaMovimentacao movimentacao) {
+
         service.save(movimentacao);
     }
 }
